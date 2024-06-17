@@ -12,7 +12,7 @@ server.use(cors());
 
 server.get('/server/:id', async ( req, res )=>{
     const serverour = req.params.id.match(/\d+/);
-    const serverlink = `https://aniwatchtv.to/ajax/v2/episode/servers?episodeId=${serverour}`;
+    const serverlink = `https://hianime.to/ajax/v2/episode/servers?episodeId=${serverour}`;
 
     try {
         const serverdefine = await axios.get(serverlink, {
